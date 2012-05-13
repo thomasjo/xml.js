@@ -1,4 +1,4 @@
-﻿/*! Copyright (c) 2012 fluxLoop AS | <insert licence url here> */
+﻿/*! Copyright (c) 2012 fluxLoop AS | https://raw.github.com/fluxloop/xml.js/master/LICENSE */
 
 ;(function () {
     'use strict';
