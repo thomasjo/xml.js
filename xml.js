@@ -1,4 +1,4 @@
-﻿/*! Copyright (c) 2012 fluxLoop AS | https://raw.github.com/fluxloop/xml.js/master/LICENSE */
+/*! Copyright (c) 2012 fluxLoop AS | https://raw.github.com/fluxloop/xml.js/master/LICENSE */
 
 ;(function () {
     'use strict';
@@ -7,7 +7,7 @@
         previousXML = root.XML,
         XML = {}
 
-    XML.VERSION = '0.1.0';
+    XML.VERSION = '0.1.1';
 
     XML.objectify = function (xml) {
         var obj;
@@ -74,7 +74,11 @@
             childNodeName = childNode.nodeName;
 
             if (childNode.nodeType === 3) {
-                obj['#text'] = childNode.nodeValue;
+                // NOTE: Is this block reasonable and safe?
+                childNodeValue = childNode.nodeValue.trim();
+                if (childNodeValue !== "") {
+                    obj['#text'] = childNodeValue;
+                }
             }
             else if (obj[childNodeName]) {
                 if (obj[childNodeName] instanceof Array) {
