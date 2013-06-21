@@ -1,7 +1,7 @@
-xml.js
+XML.js
 ======
-xml.js is a minimalistic library for working with XML in JavaScript; it supports converting to and from XML,
-in a simple, straight forward manner.
+A minimalistic library for working with XML in JavaScript. Supports converting to and from XML,
+in a simple, straightforward manner.
 
 Example usage
 -------------
