@@ -1,4 +1,4 @@
-/*! Copyright (c) 2012 fluxLoop AS | https://raw.github.com/fluxloop/xml.js/master/LICENSE */
+/*! Copyright (c) 2012 Thomas Johansen | https://raw.githubusercontent.com/thomasjo/xml.js/master/LICENSE */
 
 ;(function () {
     'use strict';
